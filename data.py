@@ -1,0 +1,3 @@
+types = []
+
+pokemon_data = []
