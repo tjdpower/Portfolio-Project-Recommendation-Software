@@ -1,0 +1,16 @@
+#obtained blueprint for ascii art from asciiart.eu/video-games/pokemon
+def print_welcome():
+    print("                                  ,'\ ")
+    print("    _.----.        ____         ,'  _\   ___    ___     ____")
+    print("_,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.")
+    print("\      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |")
+    print(" \.    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |")
+    print("   \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |")
+    print("    \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |")
+    print("     \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |")
+    print("      \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |")
+    print("       \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |")
+    print("        \_.-'       |__|    `-._ |              '-.|     '-.| |   |")
+    print("                                `'                            '-._|")
+    print("               *** Welcome to the Pokemon Picker! ***               ")
+    print("    Helping you decide which pokemon to attack with, every time!    ")
