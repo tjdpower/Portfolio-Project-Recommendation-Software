@@ -156,39 +156,44 @@ pokedex = [["001", "Bulbasaur", ["Grass", "Poison"], "45", "49", "49", "65", "65
            ["151", "Mew", ["Psychic"], "100", "100", "100", "100", "100", "100"]           
     ]
 
-strong_against_normal = ["Fighting"]
-weak_against_normal = ["Ghost"]
-strong_against_fire = ["Water", "Ground", "Rock"]
-weak_against_fire = ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"]
-strong_against_water = ["Electric", "Grass"]
-weak_against_water = ["Fire", "Water", "Ice", "Steel"]
-strong_against_electric = ["Ground"]
-weak_against_electric = ["Electric", "Flying", "Steel"]
-strong_against_grass = ["Fire", "Ice", "Poison", "Flying", "Bug"]
-weak_against_grass = ["Water", "Electric", "Grass", "Ground"]
-strong_against_ice = ["Fire", "Fighting", "Rock", "Steel"]
-weak_against_ice = ["Ice"]
-strong_against_fighting = ["Flying", "Psychic", "Fairy"]
-weak_against_fighting = ["Bug", "Rock", "Dark"]
-strong_against_poison = ["Ground", "Psychic"]
-weak_against_poison = ["Grass", "Fighting", "Poison", "Bug", "Fairy"]
-strong_against_ground = ["Water", "Grass", "Ice"]
-weak_against_ground = ["Poison", "Rock", "Electric"]
-strong_against_flying = ["Electric", "Ice", "Rock"]
-weak_against_flying = ["Grass", "Fighting", "Bug", "Ground"]
-strong_against_psychic = ["Bug", "Ghost", "Dark"]
-weak_against_psychic = ["Fighting", "Psychic"]
-string_against_bug = ["Fire", "Flying", "Rock"]
-weak_against_bug = ["Grass", "Fighting", "Ground"]
-strong_against_rock = ["Water", "Grass", "Fighting", "Ground", "Steel"]
-weak_against_rock = ["Normal", "Fire", "Poison", "Flying"]
-strong_against_ghost = ["Ghost", "Dark"]
-weak_against_ghost = ["Poison", "Bug", "Normal", "Fighting"]
-strong_against_dragon = ["Ice", "Dragon", "Fairy"]
-weak_against_dragon = ["Fire", "Water", "Electric", "Grass"]
-strong_against_dark = ["Fighting", "Bug", "Fairy"]
-weak_against_dark = ["Ghost", "Dark", "Psychic"]
-strong_against_steel = ["Fire", "Fighting", "Ground"]
-weak_against_steel = ["Normal", "Grass", "Ice", "Flying", "Psychic", "Bug", "Rock", "Dragon", "Steel", "Fairy"]
-strong_against_fairy = ["Poison", "Steel"]
-weak_against_fairy = ["Fighting", "Bug", "Dark", "Dragon"]
+strong_against_dict = {
+    'Normal' : ["Fighting"],
+    'Fire' : ["Water", "Ground", "Rock"],
+    'Water' : ["Electric", "Grass"],
+    'Electric' : ["Ground"],
+    'Grass' : ["Fire", "Ice", "Poison", "Flying", "Bug"],
+    'Ice' : ["Fire", "Fighting", "Rock", "Steel"],
+    'Fighting' : ["Flying", "Psychic", "Fairy"],
+    'Poison' : ["Ground", "Psychic"],
+    'Ground' : ["Water", "Grass", "Ice"],
+    'Flying' : ["Electric", "Ice", "Rock"],
+    'Psychic' : ["Bug", "Ghost", "Dark"],
+    'Bug' : ["Fire", "Flying", "Rock"],
+    'Rock' : ["Water", "Grass", "Fighting", "Ground", "Steel"],
+    'Ghost' : ["Ghost", "Dark"],
+    'Dragon' : ["Ice", "Dragon", "Fairy"],
+    'dark' : ["Fighting", "Bug", "Fairy"],
+    'Steel' : ["Fire", "Fighting", "Ground"],
+    'Fairy' : ["Poison", "Steel"]
+}
+
+weak_against_dict = {
+    'Normal' : ["Ghost"],
+    'Fire' : ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
+    'Water' : ["Fire", "Water", "Ice", "Steel"],
+    'Electric' : ["Electric", "Flying", "Steel"],
+    'Grass' : ["Water", "Electric", "Grass", "Ground"],
+    'Ice' : ["Ice"],
+    'Fighting' : ["Bug", "Rock", "Dark"],
+    'Poison' : ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
+    'Ground' : ["Poison", "Rock", "Electric"],
+    'Flying' : ["Grass", "Fighting", "Bug", "Ground"],
+    'Psychic' : ["Fighting", "Psychic"],
+    'Bug' : ["Grass", "Fighting", "Ground"],
+    'Rock' : ["Normal", "Fire", "Poison", "Flying"],
+    'Ghost' : ["Poison", "Bug", "Normal", "Fighting"],
+    'Dragon' : ["Fire", "Water", "Electric", "Grass"],
+    'dark' : ["Ghost", "Dark", "Psychic"],
+    'Steel' : ["Normal", "Grass", "Ice", "Flying", "Psychic", "Bug", "Rock", "Dragon", "Steel", "Fairy"],
+    'Fairy' : ["Fighting", "Bug", "Dark", "Dragon"]
+}

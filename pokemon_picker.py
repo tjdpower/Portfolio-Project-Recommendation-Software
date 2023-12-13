@@ -108,4 +108,4 @@ Enter 'y' for yes and 'n' for no.
 """)).lower()
                         if second_select_type == 'y':
                             second_selected_pokemon_type = second_matches[0]
-                            print(f"\nSelected pokemon type is {selected_pokemon_type} and {second_selected_pokemon_type}.\n")
+                            print(f"\nSelected pokemon type is {selected_pokemon_type} and {second_selected_pokemon_type}.\n")                                                                             
